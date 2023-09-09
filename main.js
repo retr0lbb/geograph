@@ -1,6 +1,7 @@
 const paths = document.querySelectorAll("svg path");
 const nameDisplay = document.querySelector("#nameCountry")
-const imgaeDisplay = document.querySelector("#imageDisplay")
+const imgaeDisplay = document.querySelector("#imageDisplay");
+
 
 class Country{
     constructor(name, lenguage, code, flag = ""){
