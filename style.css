@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 svg{
     width: 100%;
     height: 100%;
@@ -15,12 +23,14 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-
 .map{
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -45,6 +55,7 @@ body{
     width: 400px;
     height: 250px;
     background-color: #f6f6f6;
+    box-shadow: 1px 1px 10px rgba(34, 34, 34, 0.8);
     border-radius: 15px;
 }
 .wrapper{
@@ -120,6 +131,7 @@ p{
     padding: 50px;
     gap: 10px;
     border-radius: 15px;
+    box-shadow: 1px 1px 10px rgba(34, 34, 34, 0.8);
 }
 .info img{
     width: 200px;
@@ -130,35 +142,17 @@ p{
     justify-content: center;
     image-rendering: auto;
 }
-.line1{
-    translate: 932px -70px;
-    height: 650px;
-    width: 10px;
-    background-color: red;
-    transform: rotate(50deg);
-    display: flex;
-    opacity: 0.4;
-}
-.line2{
-    height: 800px;
-    width: 80px;
-    background-color: red;
-    translate: 1050px 14px;
-    transform: rotate(70deg);
-    opacity: 0.8;
-}
-.line3{
-    height: 150px;
-    width: 75px;
-    background-color: red;
-    translate: 1350px -200px;
-    transform: rotate(0deg);
-    opacity: 0.75;
-}
 .header{
     width: 100%;
     height: 20px;
     position: absolute;
     top: 0;
     padding: 20px;
+}
+
+.arrow{
+    visibility: visible;
+}
+.invis{
+    visibility: hidden;
 }
