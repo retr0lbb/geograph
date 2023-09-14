@@ -97,7 +97,7 @@ svg rect {
 
 
 .dashed-border{
-    fill: green;
+    fill: red;
     fill: url(#hachura);
 }
 
@@ -153,18 +153,15 @@ p{
     align-items: center;
     justify-content: center;
 }
-
-.header ul, a{
+.header ul, li, a{
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    text-decoration: none;
+    justify-content: space-evenly;
     list-style: none;
+    text-decoration: none;
 }
-
-
 
 .arrow{
     visibility: visible;
