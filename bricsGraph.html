@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+<body>
+    
+    <canvas id="canvas"></canvas>
+
+
+    <script>
+        const canvas = document.querySelector("#canvas").getContext('2d')
+
+
+
+        var config = {
+            type: "bar",
+            data: {
+                labels:["1995", "2010", "2023"],
+                datasets: [{
+                    label: "Participação dos BRICS no Pib global(%)",
+                    data: [16.9, 26.6, 36.9],
+                    backgroundColor:'rgba(75, 192, 192, 0.8)', // Cor de fundo das barras
+                    borderColor: 'rgba(75, 192, 192, 1)', // Cor da borda das barras
+                    borderWidth: 1, // Largura da borda das barras
+                },
+                {
+                    label: "Participação do G7 no Pib global(%)",
+                    data: [44.9, 34.3, 29.9],
+                    backgroundColor: "rgba(129, 0, 0, .8)",
+                    borderColor:"rgba(129, 0, 0, 1)",
+                    borderWidth:1
+                }
+            ]
+            },
+            options: {
+                scales: {
+            y: {
+                beginAtZero: true // Comece o eixo Y a partir de zero
+            }
+        }
+            }
+        }
+
+
+        var grafico = new Chart(canvas, config)
+    </script>
+</body>
+</html>
